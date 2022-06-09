@@ -1,0 +1,18 @@
+﻿@model StaffManagement_.Net_5.ViewModels.HomeDetails1ViewModel
+@{
+   ViewBag.Title = "Staff Details";
+}
+<h3>@Model.Title</h3>
+<div>
+    Name:@Model.Staff.FirtName @Model.Staff.LastName
+</div>
+<div>
+    Email:@Model.Staff.Email
+</div>
+<div>
+    Department:@Model.Staff.Department
+</div>
+@section Scripts
+{
+    <script src="~/javascript/JavaScript.js"></script>
+}

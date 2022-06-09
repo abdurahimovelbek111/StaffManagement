@@ -1,0 +1,38 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h3> @ViewData["title"]</h3>
+    @{
+        var staff = ViewData["staff"] as StaffManagement_.Net_5.Models.Staff;
+        if (staff is null)
+            return;
+    }
+    <div>
+        Name:@staff.FirtName @staff.LastName
+    </div>
+    <div>
+        Email:@staff.Email
+    </div>
+    <div>
+        Department:@staff.Department
+    </div>
+    <h1>------------------------------------------------------</h1>
+    <h3> @ViewBag.title</h3>
+    @{
+        staff = ViewBag.staff as StaffManagement_.Net_5.Models.Staff;
+        if (staff is null)
+            return;
+    }
+    <div>
+        Name:@staff.FirtName @staff.LastName
+    </div>
+    <div>
+        Email:@staff.Email
+    </div>
+    <div>
+        Department:@staff.Department
+    </div>
+</body>
+</html>
