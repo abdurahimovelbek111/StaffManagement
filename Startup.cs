@@ -29,7 +29,7 @@ namespace StaffManagement_.Net_5
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseStaticFiles();
+             app.UseStaticFiles();
              app.UseMvcWithDefaultRoute();
             //app.UseMvc(buelder =>
             //{
