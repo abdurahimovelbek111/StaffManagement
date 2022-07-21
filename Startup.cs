@@ -26,22 +26,23 @@ namespace StaffManagement_.Net_5
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage();               
             }
 
-             app.UseStaticFiles();
-             app.UseMvcWithDefaultRoute();
+            /* app.UseStaticFiles();*/
+            app.UseFileServer();
+            app.UseMvcWithDefaultRoute();
             //app.UseMvc(buelder =>
             //{
             //    buelder.MapRoute("default", "{controller=Home}/{action}/{id?}");
             //});
-            /*
-            app.UseRouting();
+
+           /* app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapGet("/", async context =>
-                {
+                {                    
                     await context.Response.WriteAsync("Hello World!");
                 });
             });*/
